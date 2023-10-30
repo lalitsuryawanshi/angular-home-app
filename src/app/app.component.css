@@ -1,0 +1,15 @@
+
+.left-div {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    color: azure;
+}
+
+
+.right-div {
+    height: 100vh;
+    width: 100vw;
+    background-color: azure;
+    color: black;
+}

@@ -1,0 +1,54 @@
+<!-- expense-form.component.html -->
+
+<div class="container mt-4">
+    <div class="page-header">
+        <h1>Budget and Expense Manager</h1>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <form [formGroup]="expenseForm" (ngSubmit)="submitForm()" class="row">
+                <div class="col-md-6">
+                    <!-- Column 1 -->
+                    <div class="form-group">
+                        <label for="date">Expense Date:</label>
+                        <input formControlName="date" class="form-control field-width1" type="date" id="date" name="date" required placeholder="Select">
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Select Category:</label>
+                        <select id="category" formControlName="category" class="form-select form-control field-width1" required placeholder="XSSXSDD">
+                            <option selected>select category</option>
+                            <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <!-- Column 2 -->
+                    <div class="form-group">
+                        <label for="category">Expense details:</label>
+                        <input type="text" id="description" formControlName="description" class="form-control" required placeholder="Expense Details">
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">Amount:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">€</span>
+                            </div>
+                            <input type="number" id="amount" formControlName="amount" class="form-control" required placeholder="Amount">
+                        </div> 
+                    </div>
+                </div>
+            
+                <div class="form-group button-div">
+                    <button class="button" type="submit" class="btn btn-primary">Submit</button>
+                    <button class="button" type="submit" class="btn btn-warning" (click)="resetForm()">Reset</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</div>      
+
+
+
+

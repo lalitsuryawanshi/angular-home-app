@@ -1,0 +1,42 @@
+/* expense-form.component.css */
+.container {
+    margin: auto;
+    width: 70%
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.btn {
+    margin: 10px;
+
+}
+
+.button-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.field-width1 {
+    width: 300px;
+}
+
+::placeholder {
+    color: rgb(215, 217, 215);
+    opacity: 1;
+    /* Firefox */
+}
+
+input[type=date]:invalid::-webkit-datetime-edit {
+    color: rgb(215,217,215);
+}
+
+option:not(:first-of-type) {
+    color: rgb(215,217,215);
+}

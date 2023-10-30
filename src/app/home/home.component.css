@@ -1,0 +1,35 @@
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th,
+td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+
+td.number {
+    text-align: right;
+}
+
+tr:hover {
+    background-color: #de0a0a;
+    /* Change the color as per your preference */
+}
+
+.total-row {
+    background-color: bisque;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
